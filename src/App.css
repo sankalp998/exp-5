@@ -1,0 +1,87 @@
+*{
+  font-size: 18px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-tag h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.container{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid #b6b5f7;
+  background: #000000;
+  border-radius: 10px;
+}
+
+.keypad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+
+input[type="text"]{
+  height: 70px;
+  width:230px;
+  background-color: #10111656;
+  border: 0px;
+  color: #ffffff;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: 5px solid #f82e2e;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+#clear{
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #342632;
+}
+
+#result{
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #34262a;
+}
+
+#backspace{
+  color: #333426;
+}
+
+button{
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #7c7b7b;
+  color: #ebe3e3;
+  font-weight: 500;
+}
+
+input:focus, 
+input:active,
+button:focus,
+button:active{
+  outline: none;
+}
+
+.highlight{
+  background: #2fd1c9;
+}
